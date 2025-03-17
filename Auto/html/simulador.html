@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Destino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .field {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .info {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="info">
+      <p>xxx: xxxxxxxxxxxxxx</p>
+      <p>xxxxx: xxxxxxxxx</p>
+      <p>UC Destino: 89021542</p>
+      <p>xxxxxxxx: xxxxxxxxxxxxxx</p>
+      <p>Posição Destino: EXP040202A</p>
+    </div>
+
+    <div class="field">
+      <label for="ucDestino">UC Destino:</label>
+      <input type="text" id="ucDestino">
+    </div>
+
+    <div class="field">
+      <label for="posicaoDestino">Posição Destino:</label>
+      <input type="text" id="posicaoDestino">
+    </div>
+
+    <button id="okBtn">OK</button>
+  </div>
+
+  <script>
+    document.getElementById('okBtn').addEventListener('click', () => {
+      const ucDestino = document.getElementById('ucDestino').value;
+      const posicaoDestino = document.getElementById('posicaoDestino').value;
+      
+      alert(`UC Destino: ${ucDestino}\nPosição Destino: ${posicaoDestino}`);
+    });
+  </script>
+
+</body>
+</html>
