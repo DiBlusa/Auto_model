@@ -85,7 +85,10 @@
       const ucDestino = document.getElementById('ucDestino').value;
       const posicaoDestino = document.getElementById('posicaoDestino').value;
       
-      alert(`UC Destino: ${ucDestino}\nPosição Destino: ${posicaoDestino}`);
+      console.log(`UC Destino: ${ucDestino}\nPosição Destino: ${posicaoDestino}`);
+
+      document.getElementById("ucDestino").value = "";
+      document.getElementById("posicaoDestino").value = "";
     });
   </script>
 
